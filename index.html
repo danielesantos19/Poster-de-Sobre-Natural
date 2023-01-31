@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SobreNatural</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;1,100&display=swap" rel="stylesheet">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="stylesheet" href="responsivo.css">
+    <script denfer src="index.js"></script>
+</head>
+<body>
+    <div class="video-fundo">
+        <video  class="video" autoplay loop muted>
+            <source src="./video/sn.mp4" >
+        </video>
+    </div>
+    <header class="cabecalho">
+        <a >
+            <img class="logo" src="./img/logo.png" alt="Sobrenatural">
+        </a>
+        <nav >
+            <ul class="menu">
+                <li><a href="#"> Home</a></li>
+                <li><a href="#">Detalhes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="info">
+            <img class="img-info" src="./img/snn.jpg" >
+            <p class="sinopse">A série segue os irmãos Sam e Dean       
+                 Winchester enquanto 
+               procuram por seu pai, John, que está caçando o demônio 
+               que matou a mãe deles e a namorada de Sam. Durante suas 
+               viagens, eles usam o diário de seu pai para ajudá-los a    
+               continuar o negócio da família—salvar pessoas e caçar 
+               monstros.</p>
+               <button onclick="toggle('trailer')" class="btn" id="botao"  > Veja o trailer</button>
+
+        </div>
+        <img class="sobre-natural" src="./img/Sn.jpg"  >
+        <div class="modal " id="trailer">
+            <div class="modal-conteudo">
+            <span class="modal-fechar" onclick="esconde('trailer')" >X</span>
+        <iframe width="560" height="315" 
+         src="https://www.youtube.com/embed/ijUg8PUJJoo" title="YouTube 
+         video player" frameborder="0" allow="accelerometer; autoplay; 
+         clipboard-write; encrypted-media; gyroscope; picture-in- 
+         picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    </main>
+    
+</body>
+</html>
